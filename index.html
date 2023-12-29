@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leads Gorilla  </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="app container">
+        <!-- HOME SECTION -->
+        <div id="home" class="row">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="logo.png" alt="Logo" class="d-inline-block align-text-top" />
+                    </a>
+                    <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#video">Video</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#production">Production</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#paymentModal">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <div class="text-container">
+                <h1 class="colored"><b>Find New Clients and Close More Deals</b></h1>
+                <h1><b>with World’s First AI Powered Lead Finder</b></h1>
+                <ul>
+                    <h3 class="colored">IN UNDER 60 SECONDS</h3>
+                    <li>No Cold Calling Necessary</li>
+                    <li>Full Edition, Everything Included</li>
+                    <li>No Technical Skills or Marketing Experience Needed</li>
+                </ul>
+            </div>
+        </div>
+        <!-- VIDEO CONTENT -->
+        <div id="video" class="row video-container">
+            <iframe class="video"
+                src="https://www.youtube.com/embed/djcEm_oIDUI?si=l0U2umGbBVkom9Z0&amp;start=1" title="exp video"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <!-- PRODUCTION SECTION -->
+        <div id="production" class="row production">
+            <div class="row prod-content">
+                <div class="lt-content col">
+                    <img src="access-img45.png" alt="" />
+                </div>
+                <div class="rt-content col">
+                    <p class="colored">Leadsgorilla 2.0</p>
+                    <h5 class="colored">45% DISCOUNT - Full Edition</h5>
+                    <h1 class="colored">ONLY $37</h1>
+                    <p>23,000+ Members can't be wrong.</p>
+                    <p>Cancel Anytime | 30 Days Money Back</p>
+                    <button class="btn btn-primary btn-lg access-button" type="button" data-bs-toggle="modal" data-bs-target="#paymentModal">
+                        GET INSTANT ACCESS
+                    </button>
+                    <img src="buy1w.png" alt="" />
+                    <img src="window2.png" alt="" />
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- FOOTER SECTION -->
+        <div id="about" class="row footer">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="logo.png" alt="Logo" class="d-inline-block align-text-top" />
+                </a>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio voluptas laborum repellendus id
+                    sed nostrum voluptatum quidem corporis voluptates tempore, natus minus beatae quia asperiores
+                    recusandae accusamus illo cumque voluptate?</p>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+<!-- PAYMANT PAGE -->
+<div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-primary fw-bold" id="paymentModalLabel">Ödeme Sayfası</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class=" modal-body">
+                <form id="paymentForm" onsubmit="processPayment(); return false;">
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="firstName" class="form-label text-primary">İsim:</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="John" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lastName" class="form-label text-primary">Soyisim:</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Doe" required>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="cardNumber" class="form-label text-primary">Kredi Kartı Numarası:</label>
+                        <input type="text" class="form-control" id="cardNumber" placeholder="1234 5678 9012 3456" required>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="birthDate" class="form-label text-primary">Doğum Tarihi:</label>
+                            <input type="date" class="form-control" id="birthDate" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="address" class="form-label text-primary">Adres:</label>
+                            <textarea class="form-control" id="address" rows="2" placeholder="123 Main St, City" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="expirationDate" class="form-label text-primary">Son Kullanma Tarihi:</label>
+                            <input type="text" class="form-control" id="expirationDate" placeholder="MM/YY" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="cvv" class="form-label text-primary">CVV:</label>
+                            <input type="text" class="form-control" id="cvv" placeholder="123" required>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <p class="text-primary fs-5">Toplam Tutar: $37</p>
+                        <button type="submit" class="btn btn-primary btn-lg">Ödemeyi Tamamla</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
